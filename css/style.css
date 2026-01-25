@@ -84,3 +84,94 @@ body {
 .subtle {
   display: none;
 }
+
+/* --- LOGIN PAGE STYLING --- */
+
+/* 1. Un-hide the login container */
+.login-container {
+  display: flex; /* This makes it visible again */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #050505;
+  position: relative;
+  z-index: 20; /* Sits above everything */
+}
+
+/* 2. The Box */
+.login-box {
+  width: 100%;
+  max-width: 320px; /* Narrow and elegant */
+  text-align: center;
+}
+
+/* 3. The Title */
+.login-title {
+  color: #555; /* Very subtle grey */
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+/* 4. The Input Field (Minimalist Line) */
+.login-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333; /* Just a thin line */
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 0;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.login-input:focus {
+  border-bottom: 1px solid #fff; /* Light up on click */
+}
+
+.login-input::placeholder {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+/* 5. The "Enter" Button */
+.login-btn {
+  margin-top: 2rem;
+  background: transparent;
+  border: 1px solid #333;
+  color: #777;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* 6. Close / Back Button */
+.close-btn {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: #444;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
