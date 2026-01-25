@@ -170,10 +170,47 @@ body {
 }
 
 
-/* HIDE EVERYTHING ELSE */
-/* Since you want "Only an image", we hide the standard text/footer */
-.hero-text, 
-.footer, 
-.subtle {
-  display: none;
+/* --- BRANDING & CONTACT --- */
+
+/* Center Brand Name */
+.brand-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Dead center */
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+}
+
+.brand-center h1 {
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400; /* Regular weight, not bold */
+  font-size: 0.9rem; /* Surprisingly small = more exclusive */
+  text-transform: uppercase;
+  letter-spacing: 6px; /* Very wide spacing */
+  opacity: 0.9;
+}
+
+/* Bottom Email */
+.footer-contact {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center; /* Center aligned at bottom */
+  z-index: 10;
+}
+
+.footer-contact a {
+  color: #a0a0a0; /* Muted grey, not white */
+  text-decoration: none;
+  font-size: 0.65rem; /* Very tiny */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ffffff; /* Brightens on hover */
 }
