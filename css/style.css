@@ -76,14 +76,7 @@ body {
   letter-spacing: 4px; /* Subtle expansion on hover */
 }
 
-/* HIDE EVERYTHING ELSE */
-/* Since you want "Only an image", we hide the standard text/footer */
-.hero-text, 
-.footer, 
-.login, 
-.subtle {
-  display: none;
-}
+
 
 /* --- LOGIN PAGE STYLING --- */
 
@@ -174,4 +167,13 @@ body {
 
 .close-btn:hover {
   color: #fff;
+}
+
+
+/* HIDE EVERYTHING ELSE */
+/* Since you want "Only an image", we hide the standard text/footer */
+.hero-text, 
+.footer, 
+.subtle {
+  display: none;
 }
