@@ -35,7 +35,7 @@ body {
   height: 100%;
   object-fit: cover;
   /* Dark & Moody Filter */
-  filter: brightness(0.6) contrast(110%) grayscale(20%);
+  filter: brightness(0.7) contrast(110%) grayscale(20%);
   opacity: 1;
   transition: transform 8s ease; /* Subtle movement effect if desired */
 }
